@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column; /* Alteração para layout flexível em coluna */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-family: 'Arial', sans-serif;
@@ -40,70 +40,51 @@
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         width: 90%;
-        max-width: 400px;
+        max-width: 95%; /* Ajustado para melhor adaptação em telas menores */
         text-align: center;
     }
     .modal.show {
         visibility: visible;
         opacity: 1;
     }
-    h2 {
+    h2, p {
         color: #333;
         margin-bottom: 15px;
+        padding: 0 5%; /* Adicionado padding para evitar texto muito ao bordo */
     }
     p {
-        font-size: 18px;
+        font-size: 16px; /* Tamanho de fonte ajustado para visibilidade em telas menores */
         color: #555;
-        margin-bottom: 20px;
     }
     .highlight {
         color: #4CAF50;
         font-weight: bold;
     }
     .game-info {
-        margin-top: 30px;
+        margin-top: 20px; /* Ajuste de margem reduzida */
         border-top: 1px solid #ccc;
-        padding-top: 20px;
-    }
-    .game-info p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .game-info p:first-child {
-        margin-top: 0;
+        padding-top: 10px;
     }
     button {
-        width: calc(100% - 20px); /* Redução da largura para permitir margens laterais */
-        padding: 12px;
-        margin: 10px 0; /* Ajuste de margem vertical */
-        font-size: 18px;
+        width: 90%; /* Ajuste de largura para maior responsividade */
+        padding: 10px;
+        margin: 10px 5%; /* Ajuste de margem para centralização */
+        font-size: 16px; /* Ajuste de tamanho de fonte para botões */
         color: #fff;
-        background-color: #4CAF50; /* Green */
+        background-color: #4CAF50;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
     }
     button:hover {
         background-color: #45a049;
     }
     .cover-image {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
+        width: 80%; /* Ajuste para responsividade */
+        max-width: 300px; /* Limite máximo para evitar excesso de tamanho */
+        margin: 20px auto; /* Ajuste de margem para centralização */
     }
 </style>
-
-<!-- Código de acompanhamento do Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16525092343"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16525092343');
-</script>
-
 </head>
 <body>
 <div id="myModal" class="modal">
